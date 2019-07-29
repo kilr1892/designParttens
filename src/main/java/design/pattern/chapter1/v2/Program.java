@@ -12,31 +12,46 @@ import java.util.Scanner;
  */
 public class Program {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("输入数字A: ");
-        String a = scanner.nextLine();
+        try {
 
-        System.out.println("选择运算符号 + - * / : ");
-        String b = scanner.nextLine();
 
-        System.out.println("输入数字B: ");
-        String c = scanner.nextLine();
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("输入数字A: ");
+            String stringNumberA = scanner.nextLine();
 
-        String d = "";
+            System.out.println("选择运算符号 + - * / : ");
+            String stringOperate = scanner.nextLine();
 
-        if ("+".equals(b)) {
-            d = (Double.parseDouble(a) + Double.parseDouble(c)) + "";
+            System.out.println("输入数字B: ");
+            String stringNumberB = scanner.nextLine();
+
+            String stringResult = "";
+
+            switch (stringOperate) {
+                case "+":
+                    stringResult = (Double.parseDouble(stringNumberA) + Double.parseDouble(stringNumberB)) + "";
+                    break;
+                case "-":
+                    stringResult = (Double.parseDouble(stringNumberA) - Double.parseDouble(stringNumberB)) + "";
+                    break;
+                case "*":
+                    stringResult = (Double.parseDouble(stringNumberA) * Double.parseDouble(stringNumberB)) + "";
+                    break;
+                case "/":
+                    if ("0".equals(stringNumberB)) {
+                        stringResult = "除数不能为0";
+                    } else {
+                        stringResult = (Double.parseDouble(stringNumberA) / Double.parseDouble(stringNumberB)) + "";
+                    }
+                    break;
+                default:
+                    stringResult = "运算符输入错误";
+            }
+
+            System.out.println("计算结果是: " + stringResult);
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        if ("-".equals(b)) {
-            d = (Double.parseDouble(a) - Double.parseDouble(c)) + "";
-        }
-        if ("*".equals(b)) {
-            d = (Double.parseDouble(a) * Double.parseDouble(c)) + "";
-        }
-        if ("/".equals(b)) {
-            d = (Double.parseDouble(a) / Double.parseDouble(c)) + "";
-        }
-
-        System.out.println("结果是: " + d);
     }
 }
