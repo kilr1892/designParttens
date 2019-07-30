@@ -3,7 +3,7 @@ package design.pattern.chapter1.v2;
 import java.util.Scanner;
 
 /**
- * 大话设计模式第一章 .
+ * 大话设计模式第一章 减少 if 判断.
  * When I wrote this, only God and I understood what I was doing
  * Now, God only knows
  *
