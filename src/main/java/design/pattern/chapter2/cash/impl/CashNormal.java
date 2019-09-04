@@ -1,6 +1,6 @@
-package design.pattern.chapter2.v4.cash.impl;
+package design.pattern.chapter2.cash.impl;
 
-import design.pattern.chapter2.v4.cash.CashSuper;
+import design.pattern.chapter2.cash.CashSuper;
 
 /**
  * 普通收款方式, 不打折.

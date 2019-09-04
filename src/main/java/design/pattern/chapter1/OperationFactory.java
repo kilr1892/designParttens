@@ -1,4 +1,4 @@
-package design.pattern.chapter1.v4;
+package design.pattern.chapter1;
 
 /**
  * 操作类的工厂.

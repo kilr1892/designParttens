@@ -1,4 +1,4 @@
-package design.pattern.chapter1.v4;
+package design.pattern.chapter1;
 
 /**
  * 面向对象设计.

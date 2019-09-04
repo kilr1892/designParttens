@@ -1,9 +1,6 @@
-package design.pattern.chapter2.v5.main;
+package design.pattern.chapter2.main;
 
-import design.pattern.chapter2.v5.cash.CashContext;
-import design.pattern.chapter2.v5.cash.impl.CashNormal;
-import design.pattern.chapter2.v5.cash.impl.CashRebate;
-import design.pattern.chapter2.v5.cash.impl.CashReturn;
+import design.pattern.chapter2.cash.CashContext;
 
 import java.util.Scanner;
 

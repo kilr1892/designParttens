@@ -1,4 +1,4 @@
-package design.pattern.chapter2.v4.cash;
+package design.pattern.chapter2.cash;
 
 /**
  * 收款方式接口.

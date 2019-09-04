@@ -1,8 +1,8 @@
-package design.pattern.chapter2.v5.cash;
+package design.pattern.chapter2.cash;
 
-import design.pattern.chapter2.v5.cash.impl.CashNormal;
-import design.pattern.chapter2.v5.cash.impl.CashRebate;
-import design.pattern.chapter2.v5.cash.impl.CashReturn;
+import design.pattern.chapter2.cash.impl.CashNormal;
+import design.pattern.chapter2.cash.impl.CashRebate;
+import design.pattern.chapter2.cash.impl.CashReturn;
 
 /**
  * 策略模式上下文.

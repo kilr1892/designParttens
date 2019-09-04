@@ -1,6 +1,6 @@
-package design.pattern.chapter2.v5.cash.impl;
+package design.pattern.chapter2.cash.impl;
 
-import design.pattern.chapter2.v5.cash.CashSuper;
+import design.pattern.chapter2.cash.CashSuper;
 
 /**
  * 返利收费子类.
